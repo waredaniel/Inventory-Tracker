@@ -6,9 +6,10 @@ function Soup(props) {
   return (
     <React.Fragment>
       <div onClick = {() => props.whenSoupClicked(props.id)}>
-        <h3>{props.name} - {props.price}</h3>
-        <h5>{props.origin}</h5>
-        <h5>{props.description}</h5>
+        <h3>Name: {props.name} - ${props.price}</h3>
+        <h5>From: {props.origin}</h5>
+        <h5>Description: {props.description}</h5>
+        <h5>Stock: </h5>
       </div>
     </React.Fragment>
   );

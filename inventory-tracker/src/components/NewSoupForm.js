@@ -8,7 +8,7 @@ function NewSoupForm(props){
 function handleNewSoupFormSubmission(event) {
     event.preventDefault();
     props.onNewSoupCreation({
-      names: event.target.name.value, 
+      name: event.target.name.value, 
       origin: event.target.origin.value, 
       price: event.target.price.value,
       description: event.target.description.value, 
