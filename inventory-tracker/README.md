@@ -1,3 +1,34 @@
+# Inventory Tracker
+
+Inventory-Tracker is a React App that uses shared/local state and functional and class components to create a simple inventory system.
+
+## Contributors
+
+Daniel Ware <waredanielb@gmail.com>
+
+## Technologies Used
+
+React, Javascript, CSS
+
+## Application Setup
+
+1. Clone repository to your desktop. 
+2. Navigate to 'inventory-tracker' folder directory
+3. Run npx create-react-app
+4. Run npm run build
+5. Navigate to http://localhost:3000 in web browser
+
+## Known Bugs
+
+1. With multiple inventory items the sell functionality no longer works and displays a blank page.
+
+## Copyright
+
+Daniel Ware 2022
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
