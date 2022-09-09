@@ -11,9 +11,11 @@ function SoupList(props) {
           {props.soupList.map((soup) =>
           <Soup 
           whenSoupClicked = { props.onSoupSelection }
+          decrementStock = {props.onClick }
           name={soup.name}
           origin={soup.origin}
           price={soup.price}
+          stock={soup.stock}
           description={soup.description}
           id={soup.id}
           key={soup.id}/>

@@ -11,7 +11,8 @@ function handleNewSoupFormSubmission(event) {
       name: event.target.name.value, 
       origin: event.target.origin.value, 
       price: event.target.price.value,
-      description: event.target.description.value, 
+      description: event.target.description.value,
+      stock: event.target.stock.value,
       id: v4()
     });
   }

@@ -14,12 +14,16 @@ function ReusableForm(props) {
           name='origin'
           placeholder='Origin' />
         <input
-          type='text'
+          type='number'
           name='price'
           placeholder='Price' />
         <textarea
           name='description'
-          placeholder='Description of Soup.' />
+          placeholder='Description of Soup' />
+        <input
+          type='number'
+          name='stock'
+          placeholder='Quantity of Soup' />
         <button type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>
