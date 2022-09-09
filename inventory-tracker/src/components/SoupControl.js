@@ -12,6 +12,7 @@ class SoupControl extends React.Component {
       selectedSoup: null,
       editing: false
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
@@ -56,11 +57,11 @@ class SoupControl extends React.Component {
     buttonText = "Return to Soup Menu";
     }
     else if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewSoupForm onNewSoupCreation={this.handleAddingNewSoupToList} /> // new code in this line }
+      currentlyVisibleState = <NewSoupForm onNewSoupCreation={this.handleAddingNewSoupToList} />
       buttonText = "Return to Soup Menu";
     } else {
-      currentlyVisibleState = currentlyVisibleState = <SoupList soupList={this.state.mainSoupList} onSoupSelection={this.handleChangingSelectedSoup} />; // new code
-      buttonText = "Add Soup"; // new code
+      currentlyVisibleState = currentlyVisibleState = <SoupList soupList={this.state.mainSoupList} onSoupSelection={this.handleChangingSelectedSoup} />;
+      buttonText = "Add Soup";
     }
 
 
